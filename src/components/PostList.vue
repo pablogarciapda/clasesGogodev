@@ -1,3 +1,15 @@
+<template>
+  <div class="container">
+    <PostDetail
+      v-for="elem in infoPost"
+      :key="elem.title"
+      :title="elem.title"
+      :description="elem.description"
+      @alerta="ShowAlert"
+    />
+  </div>
+</template>
+
 <script setup lang="ts">
   import PostDetail from './PostDetail.vue'
 
@@ -17,18 +29,6 @@
     alert(msg)
   }
 </script>
-
-<template>
-  <div class="container">
-    <PostDetail
-      v-for="elem in infoPost"
-      :key="elem.title"
-      :title="elem.title"
-      :description="elem.description"
-      @alerta="ShowAlert"
-    />
-  </div>
-</template>
 
 <style scoped>
   .container {

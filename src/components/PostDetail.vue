@@ -1,3 +1,14 @@
+<template>
+  <div class="post">
+    <h3>{{ props.title }}</h3>
+    <p>
+      {{ props.description }}
+    </p>
+    <input type="text" v-model="message" />
+    <button @click="handleClick">di hola</button>
+  </div>
+</template>
+
 <script setup lang="ts">
   import { defineProps, defineEmits, Ref, ref } from 'vue'
   const props = defineProps({
@@ -37,17 +48,6 @@
   //   },
   // })
 </script>
-
-<template>
-  <div class="post">
-    <h3>{{ props.title }}</h3>
-    <p>
-      {{ props.description }}
-    </p>
-    <input type="text" v-model="message" />
-    <button @click="handleClick">di hola</button>
-  </div>
-</template>
 
 <style scoped>
   .post {

@@ -99,7 +99,6 @@
         <th v-else>No entregada</th>
       </tr>
     </table>
-    <p>{{ teachers }}</p>
   </section>
 </template>
 

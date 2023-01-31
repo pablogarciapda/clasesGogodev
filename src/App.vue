@@ -1,9 +1,9 @@
 <template>
-  <ComputedExample />
+  <TeacherForm />
 </template>
 
 <script lang="ts" setup>
-  import ComputedExample from './components/ComputedExample.vue'
+  import TeacherForm from './components/TeacherForm.vue'
 </script>
 
 <style></style>
